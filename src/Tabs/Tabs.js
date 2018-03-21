@@ -1,5 +1,4 @@
 import React from 'react'
-import './style.scss'
 import classNames from 'classnames'
 
 import Pane from './pane'

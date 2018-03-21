@@ -1,13 +1,13 @@
 .CodeMirror {
   font-family: 'source-code-pro', Menlo, 'Courier New', Consolas, monospace;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 20px;
   color: #484848;
   padding: 15px 0;
   border-right: 1px solid #eaeefb;
   z-index: 0;
   height: auto;
-  background: transparent;
+  background: #282C34;
 
   .CodeMirror-gutters {
     background: transparent;
@@ -21,18 +21,23 @@
 
   pre {
     padding: 0 25px;
+    color: #ffffff;
   }
-
-  span.cm-keyword { color: #1990B8; }
+  span.presentation {
+    color: #ffffff;
+  }
+  span.cm-keyword { color: #C678DD; }
   span.cm-atom { color: #C92C2C; }
   span.cm-number { color: #C92C2C; }
-  span.cm-variable { color: black; }
+  span.cm-variable { color: #61AFEF; }
   span.cm-variable-2 { color: #0000C0; }
   span.cm-variable-3 { color: #0000C0; }
-  span.cm-property { color: black; }
-  span.cm-operator { color: black; }
+  span.cm-property { color: #C92C2C; }
+  span.cm-operator { color: #C678DD; }
   span.cm-comment { color: #7D8B99; }
-  span.cm-string { color: #2F9C0A; }
+  span.cm-string { color: #98C379; }
   span.cm-string-2 { color: #2F9C0A; }
   span.cm-link { color: #C92C2C; }
+  span.cm-tag { color: #E06C75;}
+  span.cm-attribute { color: #E5C07B}
 }

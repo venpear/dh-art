@@ -1,4 +1,4 @@
-import './style.scss'
+
 
 export { default as Tabs } from './Tabs';
 export { default as Collapse } from './Collapse'

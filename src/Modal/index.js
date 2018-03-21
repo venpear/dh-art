@@ -1,9 +1,6 @@
 import React from 'react'
-
 import ReactDOM from 'react-dom';
-
 import Modal from './Modal'
-import './style.scss'
 
 const box = (props = {}) => {
   return asyncDIV(props)

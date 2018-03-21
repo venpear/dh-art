@@ -1,5 +1,5 @@
 export default {
   input: require('./input'),
-  tab: require('./tab'),
+  tabs: require('./tabs'),
   modal: require('./modal')
 }

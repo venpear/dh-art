@@ -1,5 +1,4 @@
 import React from 'react'
-import './style.scss'
 import Item from './Item'
 
 export default class Collapse extends React.Component {

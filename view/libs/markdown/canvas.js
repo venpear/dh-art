@@ -85,11 +85,11 @@ export default class Canvas extends React.Component {
           {
             this.state.showBlock ? (
               <span>
-                展开代码
+                关闭源码
               </span>
             ) : (
               <span>
-                关闭代码
+                显示源码
               </span>
             )
           }

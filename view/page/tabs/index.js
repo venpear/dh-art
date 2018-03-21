@@ -2,8 +2,8 @@ import Markdown from '../../libs/markdown';
 
 // import './style.scss';
 
-export default class Modal extends Markdown {
+export default class Tabs extends Markdown {
   document(locale) {
-    return require('../../../docs/modal.md');
+    return require('../../../docs/tabs.md');
   }
 }

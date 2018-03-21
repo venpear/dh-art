@@ -4,7 +4,7 @@ import { AppContainer } from 'react-hot-loader';
 
 import View from './view';
 import './styles/index.scss'
-
+import '../src/style.scss'
 render(
   <AppContainer>
     <View />

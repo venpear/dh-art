@@ -32,7 +32,7 @@ export default class View extends React.Component {
         <div className="app-container">
           <div className="app-nav">
             <ul>
-              <li><a href="#/tab">Tab切换</a></li>
+              <li><a href="#/tabs">Tab切换</a></li>
               <li><a href="#/input">input输入框</a></li>
               <li><a href="#/modal">Modal模态框</a></li>
             </ul>

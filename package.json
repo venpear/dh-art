@@ -2,14 +2,16 @@
   "name": "component-dhart",
   "version": "1.0.0",
   "description": "this datahunter UI for React",
-  "main": "index.js",
+  "main": "libs/index.js",
   "scripts": {
     "start": "cd view && node registry.js",
+    "build": "sh ./scripts/compiled.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jerryberton",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-runtime": "^6.23.0",

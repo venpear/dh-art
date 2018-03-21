@@ -26,9 +26,9 @@ export default class Markdown extends React.Component {
   }
 
   renderDOM() {
+    
     for (const [id, component] of this.components) {
       const div = document.getElementById(id);
-
       if (div instanceof HTMLElement) {
         ReactDOM.render(component, div);
       }
@@ -37,14 +37,13 @@ export default class Markdown extends React.Component {
   }
 
   render() {
-    const document = this.document(localStorage.getItem('ELEMENT_LANGUAGE') || 'zh-CN');
-
+    const document = this.document();
     if (typeof document === 'string') {
       this.components.clear();
 
-      const html = marked(document.replace(/:::\s?demo\s?([^]+?):::/g, (match, p1, offset) => {
+      const html = marked(document.replace(/@\s?example\s?([^]+?)@/g, (match, p1, offset) => {
         const id = offset.toString(36);
-
+        console.log( this.constructor.name.toLowerCase(), 'kkk')
         this.components.set(id, React.createElement(Canvas, Object.assign({
           name: this.constructor.name.toLowerCase()
         }, this.props), p1));

@@ -1,5 +1,4 @@
 import React from 'react'
-import './style.scss'
 import Option from './Option'
 import classNames from 'classnames'
 
