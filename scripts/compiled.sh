@@ -12,8 +12,9 @@ git add .
 git commit -m '更新版本'
 git push origin master
 
-if [ $SYSTEM != "shulie" ]; then
-  echo "!!请登录npm账号"
-  exit    
-fi
+if [ $SYSTEM == "shulie" ]; then
   npm version patch
+  npm publish
+fi
+  echo "!!请登录npm账号"
+  exit 

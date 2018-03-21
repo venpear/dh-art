@@ -1,6 +1,6 @@
 {
   "name": "component-dhart",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "this datahunter UI for React",
   "main": "libs/index.js",
   "scripts": {
@@ -10,6 +10,14 @@
   },
   "author": "Jerryberton",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JerryBerton/dh-art.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JerryBerton/dh-art.gitissues"
+  },
+  "homepage": "https://github.com/JerryBerton/dh-art.git#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
