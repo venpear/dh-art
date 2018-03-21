@@ -1,6 +1,6 @@
 {
   "name": "dh-art",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "this datahunter UI for React",
   "main": "libs/index.js",
   "scripts": {
