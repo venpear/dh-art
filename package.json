@@ -1,6 +1,6 @@
 {
   "name": "component-dhart",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "this datahunter UI for React",
   "main": "libs/index.js",
   "scripts": {
