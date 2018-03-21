@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  font-weight: 400;
+}
+
+.app-container {
+  width: 1140px;
+  padding: 0 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@import './page.scss';
+@import './common.scss';
+.app-nav {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  ul {
+    list-style: none;
+    li {
+      padding: 16px 0;
+      >a {
+        color: #5e6d82;
+        text-decoration: none;
+      }
+    }
+  }
+}

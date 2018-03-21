@@ -1,0 +1,44 @@
+$default-color: #23c312;
+$theme-bg: #202020; // 主题背景色
+$theme-font-color: #999999; // 主题字体色
+.dhArt-tabs {
+  .dhArt-tabs__header {
+    padding: 0;
+    position: relative;
+    margin: 0 0 16px;
+  }
+  .dhArt-tabs__item {
+    position: relative;
+    display: inline-block;
+    line-height: 48px;
+    padding: 0 16px;
+    cursor: pointer;
+    
+  }
+  .is-active {
+    color: $default-color;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: $default-color;
+      transition: all 3s;
+    }
+  }
+
+  .dhArt-tabs__body {
+    overflow: hidden;
+    position: relative;
+  }
+  &-theme {
+    background: $theme-bg;
+    color: $theme-font-color;
+    .dhArt-tabs__header {
+      background: $theme-bg;
+      color: $theme-font-color;
+    }
+  }
+}
