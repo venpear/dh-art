@@ -5,7 +5,7 @@ export default class Collapse extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      activeNames: []
+      activeNames: [].concat(props.value)
     }
   }
   setActiveNames(activeNames) {

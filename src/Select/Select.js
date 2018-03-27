@@ -28,12 +28,16 @@ export default class Select extends React.Component {
   onAction(value) {
     const { selectKeys } = this.state
     const { onChange } = this.props
+    // typeof  === 'function' && onChange(value)
     this.setState({
       selectKeys: value,
       hidden: false
     }, () => {
-      typeof onChange === 'function' && onChange(selectKeys)
+      if (onChange) {
+        onChange(value)
+      } 
     })
+    
   }
   renderValue(selectKeys, collection) {
     return selectKeys.map((item, key) => {
@@ -61,7 +65,11 @@ export default class Select extends React.Component {
             className="dhArt-select-wrapper__value"
             onMouseDown={this.onShow.bind(this)}
           >
-            <input value={collection[selectKeys]} placeholder={placeholder} />
+            <input 
+              value={collection[selectKeys]} 
+              placeholder={placeholder} 
+              readOnly={true}
+            />
             {/* {
               selectKeys.length !== 0
               ? this.renderValue(selectKeys, collection)
@@ -89,7 +97,7 @@ export default class Select extends React.Component {
                         ...props,
                         value,
                         selected: selectKeys === value,
-                        onClick: () => { this.onAction(value) }
+                        onClick: () => this.onAction(value)
                       }
                     }
                   })

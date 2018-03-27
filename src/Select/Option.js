@@ -10,10 +10,7 @@ export default class Option extends React.Component {
     const { onClick, value, children, selected } = this.props
     return (
       <li 
-        onClick={
-          () => {
-          onClick && onClick()
-        }}
+        onClick={(e) => { onClick && onClick(e)}}
         className={classNames('dhArt-select-dropdown__item', {
           'is-selected': selected
         })} 
