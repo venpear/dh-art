@@ -34,6 +34,7 @@ export default class View extends React.Component {
             <ul>
               <li><a href="#/tabs">Tab切换</a></li>
               <li><a href="#/input">input输入框</a></li>
+              <li><a href="#/select">select输入框</a></li>
               <li><a href="#/modal">Modal模态框</a></li>
             </ul>
           </div>

@@ -70,11 +70,11 @@ body {
   font-size: 14px;
   box-sizing: border-box; }
   .dhArt-input .dhArt-input-prefix {
-    font-size: 14px;
+    font-size: 12px;
     padding: 0 8px;
     text-align: center; }
   .dhArt-input .dhArt-input-suffix {
-    font-size: 14px;
+    font-size: 12px;
     padding: 0 8px;
     text-align: center; }
   .dhArt-input .dhArt-input-wrapper {
@@ -234,14 +234,24 @@ body {
     opacity: 0; } }
 
 .dhArt-select {
-  position: relative;
   display: flex;
-  padding: 6px 0; }
+  align-items: center;
+  padding: 6px 0;
+  font-size: 12px;
+  box-sizing: border-box; }
   .dhArt-select input {
     width: 100%;
     border: none;
     background: none;
     outline: none; }
+  .dhArt-select .dhArt-select-prefix {
+    font-size: 12px;
+    padding: 0 8px;
+    text-align: center; }
+  .dhArt-select .dhArt-select-suffix {
+    font-size: 12px;
+    padding: 0 8px;
+    text-align: center; }
   .dhArt-select .dhArt-select-wrapper {
     flex: 1; }
     .dhArt-select .dhArt-select-wrapper__value {
@@ -249,6 +259,9 @@ body {
       font-size: 12px;
       padding: 2px 0;
       color: #999999; }
+      .dhArt-select .dhArt-select-wrapper__value > input {
+        color: #999999;
+        padding: 2px 0; }
     .dhArt-select .dhArt-select-wrapper__input {
       flex: 1;
       position: relative;
@@ -289,7 +302,6 @@ body {
     left: 0;
     width: 100%;
     background: #2E2E2E;
-    display: none;
     box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
     transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1) 0ms; }
     .dhArt-select .dhArt-select-dropdown ul {
