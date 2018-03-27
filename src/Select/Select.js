@@ -28,14 +28,10 @@ export default class Select extends React.Component {
   onAction(value) {
     const { selectKeys } = this.state
     const { onChange } = this.props
-    // typeof  === 'function' && onChange(value)
+    typeof  onChange === 'function' && onChange(value)
     this.setState({
       selectKeys: value,
       hidden: false
-    }, () => {
-      if (onChange) {
-        onChange(value)
-      } 
     })
     
   }
