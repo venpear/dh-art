@@ -316,7 +316,8 @@ body {
       padding: 9px 12px;
       line-height: 1;
       color: #999999;
-      cursor: pointer; }
+      cursor: pointer;
+      text-align: left; }
       .dhArt-select .dhArt-select-dropdown .dhArt-select-dropdown__item:hover {
         background: #404040;
         color: #FFFFFF; }

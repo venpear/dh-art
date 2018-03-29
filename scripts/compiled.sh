@@ -13,7 +13,7 @@ git commit -m '更新版本'
 git push origin master
 
 if [ $SYSTEM == "jerryberton" ]; then
-  npm version patch
+  npm version minor
   npm publish
 fi
  
