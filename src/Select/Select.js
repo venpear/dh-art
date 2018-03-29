@@ -11,6 +11,13 @@ export default class Select extends React.Component {
       selectKeys: props.defaultValue || props.value || ''
     }
   }
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.value !== this.props.value) {
+      this.setState({
+        selectKeys: nextProps.value
+      })
+    }
+  }
   getCollection(children) {
     let collection = {}
     React.Children.forEach(children, (item) => {
