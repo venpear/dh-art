@@ -1,0 +1,40 @@
+.dhArt-slider {
+  width: 100%;
+  height: 6px;
+  position: relative;
+  & > div {
+    // float: left;
+    position: absolute;
+  }
+  &-step {
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    border-radius: 6px;
+  }
+  &-handle {
+    height: 16px;
+    width: 16px;
+    top: -6px;
+    cursor: pointer;
+    background-color: #23c132;
+    border-radius: 50%;
+    margin-left: -8px;
+    .tip {
+      position: absolute;
+      bottom: 20px;
+      border: 1px solid #333333;
+      padding: 6px;
+      // display: none;
+    }
+    &:hover {
+      display: block;
+    }
+   
+  }
+  &-track {
+    height: 100%;
+    background-color: #2ad450;
+    border-radius: 6px;
+  }
+}

@@ -36,6 +36,7 @@ export default class View extends React.Component {
               <li><a href="#/input">input输入框</a></li>
               <li><a href="#/select">select输入框</a></li>
               <li><a href="#/modal">Modal模态框</a></li>
+              <li><a href="#/slider">Slider 滑动输入</a></li>
             </ul>
           </div>
           <div className="app-page">

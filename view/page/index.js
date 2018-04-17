@@ -2,5 +2,6 @@ export default {
   input: require('./input'),
   tabs: require('./tabs'),
   modal: require('./modal'),
-  select: require('./select')
+  select: require('./select'),
+  slider: require('./slider')
 }
