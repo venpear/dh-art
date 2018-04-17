@@ -27,7 +27,6 @@ export default class Slider extends Component {
     let per = Math.round((x / width) * 100)
     per = per > 100 ? 100 : per
     per = per < 0 ? 0 : per
-    // console.log(per, 'per')
     this.setState({value: per})
   }
   onMouseEnd() {
